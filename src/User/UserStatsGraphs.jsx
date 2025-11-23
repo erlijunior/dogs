@@ -40,7 +40,7 @@ const UserStatsGraphs = ({ data }) => {
 				/>
 			</div>
 			<div className={`${styles.graphItem}`}>
-				<VictoryChart padding={{ top: 20, bottom: 20, left: 80, right: 80 }}>
+				<VictoryChart>
 					<VictoryBar alignment='start' data={graph}></VictoryBar>
 				</VictoryChart>
 			</div>
