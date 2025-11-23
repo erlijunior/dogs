@@ -1,16 +1,118 @@
-# React + Vite
+# 🐕 Dogs - Rede Social para Cachorros
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido durante o curso de React da [Origamid](https://www.origamid.com/).
 
-Currently, two official plugins are available:
+Uma rede social completa onde usuários podem compartilhar fotos de seus cachorros, comentar em publicações e visualizar estatísticas de acesso.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias
 
-## React Compiler
+- **React** 19.2.0
+- **React Router DOM** 7.9.6 - Navegação e rotas
+- **Vite** - Build tool e dev server
+- **Victory.js** - Gráficos e visualizações
+- **CSS Modules** - Estilização com escopo local
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Funcionalidades
 
-## Expanding the ESLint configuration
+### 📱 Autenticação
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Login e logout de usuários
+- Criação de conta
+- Recuperação de senha
+- Rotas protegidas
+
+### 📸 Feed de Fotos
+
+- Visualização de fotos em grid responsivo
+- Modal de foto com detalhes
+- Sistema de comentários
+- Infinite scroll
+
+### 👤 Perfil do Usuário
+
+- Upload de novas fotos
+- Galeria de fotos do usuário
+- Exclusão de fotos próprias
+- Visualização de perfis públicos
+
+### 📊 Estatísticas
+
+- Gráfico de pizza com visualizações por foto
+- Gráfico de barras com total de acessos
+- Carregamento lazy dos gráficos
+- Interface responsiva
+
+## 🎨 Recursos Técnicos
+
+- **Custom Hooks**
+
+  - `useFetch` - Requisições HTTP
+  - `useForm` - Validação de formulários
+  - `useMedia` - Media queries responsivas
+
+- **Context API**
+
+  - `UserContext` - Gerenciamento de estado global do usuário
+
+- **Componentes Reutilizáveis**
+
+  - Input com validação
+  - Botões estilizados
+  - Loading states
+  - Error handling
+  - Image com lazy loading
+
+- **Otimizações**
+  - Lazy loading de componentes
+  - Code splitting
+  - Imagens otimizadas
+
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── Components/
+│   ├── Feed/          # Feed de fotos
+│   ├── Forms/         # Inputs e botões
+│   ├── Helper/        # Componentes auxiliares
+│   ├── Login/         # Autenticação
+│   └── Photo/         # Detalhes e comentários
+├── User/              # Área do usuário
+├── Contexts/          # Context API
+├── Hooks/             # Custom hooks
+└── Assets/            # Imagens e SVGs
+```
+
+## 🛠️ Como executar
+
+```bash
+# Instalar dependências
+npm install
+
+# Executar em desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Preview da build
+npm run preview
+```
+
+## 🎓 Aprendizados
+
+Este projeto foi desenvolvido como parte do curso de React da Origamid e contempla:
+
+- React Hooks avançados
+- React Router DOM com rotas aninhadas
+- Autenticação e autorização
+- Consumo de APIs REST
+- Gerenciamento de estado global
+- CSS Modules
+- Componentização
+- Boas práticas de código
+- Otimização de performance
+
+---
+
+Desenvolvido por mim (Erli Junior) durante o curso React Completo da Origamid 🚀
